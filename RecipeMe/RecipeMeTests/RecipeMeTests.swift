@@ -2,8 +2,8 @@
 //  RecipeMeTests.swift
 //  RecipeMeTests
 //
-//  Created by Kashif Mustahsan on 7/17/16.
-//  Copyright © 2016 Kashif Mustahsan. All rights reserved.
+//  Created by macbookair11 on 8/25/16.
+//  Copyright © 2016 macbookair11. All rights reserved.
 //
 
 import XCTest
