@@ -2,12 +2,14 @@
 //  AppDelegate.swift
 //  RecipeMe
 //
-//  Created by Kashif Mustahsan on 7/17/16.
-//  Copyright © 2016 Kashif Mustahsan. All rights reserved.
+//  Created by macbookair11 on 8/25/16.
+//  Copyright © 2016 macbookair11. All rights reserved.
 //
 
 import UIKit
-
+import FBSDKLoginKit
+import FBSDKCoreKit
+import Firebase
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,7 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        return true
+        FIRApp.configure()
+        return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -40,7 +43,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
+    }
 
 }
 

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Main Screen View Controller-->
+        <scene sceneID="OQC-7R-F8C">
+            <objects>
+                <viewController storyboardIdentifier="loggedIn" id="tjU-vy-2ZV" customClass="MainScreenViewController" customModule="RecipeMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P2g-VL-FUC"/>
+                        <viewControllerLayoutGuide type="bottom" id="jPe-K8-WXW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="56b-lL-jv8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1wv-eD-fFz">
+                        <barButtonItem key="leftBarButtonItem" image="menu-hamburger" id="sS1-2S-VCK">
+                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="menu-kebab" id="bAq-4T-FDa">
+                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="filterButton" destination="bAq-4T-FDa" id="Cx0-Ki-Unp"/>
+                        <outlet property="menuButton" destination="sS1-2S-VCK" id="Smd-uL-QOt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DP7-eH-wZV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1897" y="60"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="htL-tc-Oq1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gxm-cO-GWT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="w63-mv-wbq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tjU-vy-2ZV" kind="relationship" relationship="rootViewController" id="vTE-Uv-J3D"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xUO-3q-uBg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1095" y="60"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="menu-hamburger" width="20" height="20"/>
+        <image name="menu-kebab" width="20" height="20"/>
+    </resources>
+</document>
