@@ -25,6 +25,8 @@
 		B8B302691D73CA0C002521EB /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B302681D73CA0C002521EB /* TabBarViewController.swift */; };
 		B8B3026B1D73CA29002521EB /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B3026A1D73CA29002521EB /* PopUpViewController.swift */; };
 		B8B3026D1D73CA4D002521EB /* HomeFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B3026C1D73CA4D002521EB /* HomeFeedViewController.swift */; };
+		B8B3026F1D73CAC6002521EB /* MainScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8B3026E1D73CAC6002521EB /* MainScreen.storyboard */; };
+		B8B302711D73CAE8002521EB /* HomeFeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8B302701D73CAE8002521EB /* HomeFeedViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		B8B302681D73CA0C002521EB /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		B8B3026A1D73CA29002521EB /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		B8B3026C1D73CA4D002521EB /* HomeFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeFeedViewController.swift; sourceTree = "<group>"; };
+		B8B3026E1D73CAC6002521EB /* MainScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainScreen.storyboard; sourceTree = "<group>"; };
+		B8B302701D73CAE8002521EB /* HomeFeedViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeFeedViewController.storyboard; sourceTree = "<group>"; };
 		D5A2D5E548038A4920B08114 /* Pods_RecipeMeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecipeMeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC80D3D1E3D961386B2DF565 /* Pods-RecipeMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipeMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecipeMe/Pods-RecipeMe.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -202,6 +206,8 @@
 			children = (
 				B8A733441D6FBF2B0038D8A7 /* Main.storyboard */,
 				B8A733491D6FBF2B0038D8A7 /* LaunchScreen.storyboard */,
+				B8B3026E1D73CAC6002521EB /* MainScreen.storyboard */,
+				B8B302701D73CAE8002521EB /* HomeFeedViewController.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -340,8 +346,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8A7334B1D6FBF2B0038D8A7 /* LaunchScreen.storyboard in Resources */,
+				B8B3026F1D73CAC6002521EB /* MainScreen.storyboard in Resources */,
 				B8A733481D6FBF2B0038D8A7 /* Assets.xcassets in Resources */,
 				B8A733461D6FBF2B0038D8A7 /* Main.storyboard in Resources */,
+				B8B302711D73CAE8002521EB /* HomeFeedViewController.storyboard in Resources */,
 				B8A7337A1D6FD0CA0038D8A7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

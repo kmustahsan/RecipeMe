@@ -21,8 +21,8 @@ class MainScreenViewController: UIViewController {
         //        self.title = "Today's Top Recipes"
         self.title = "Today's Top Recipes"
         
-        //        menuButton.target = self.revealViewController()
-        //        menuButton.action = Selector("revealToggle:")
+                menuButton.target = self.revealViewController()
+                menuButton.action = Selector("revealToggle:")
         
     }
     

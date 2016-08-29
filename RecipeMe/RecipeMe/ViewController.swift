@@ -66,13 +66,12 @@ class ViewController: UIViewController {
                                 self.showErrorAlert("Could not create account", msg: "Problem creating account")
                             } else {
                                 NSUserDefaults.standardUserDefaults().setValue(result?.uid, forKey: KEY_UID)
-                                self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
+                                let mainScreenVC = TabBarViewController()
+                                self.presentViewController(mainScreenVC, animated: true, completion: nil)
                                 print("saved")
                             }
                         })
                     } else {
-                        print("EMAIL \(email)")
-                        print ("PASS \(password)")
                         self.showErrorAlert("Email and Password Required", msg: "You must enter an email and password")
                     }
                 }
